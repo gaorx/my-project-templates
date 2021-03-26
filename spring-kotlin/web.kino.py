@@ -15,7 +15,7 @@ class HelloController {
 def main(k):
     common = k.import_('common.py')
     d = common.Dependency
-    args = common.init_kotlin_gradle_project(k, [
+    args = common.init_project(k, [
         d('org.springframework.boot', 'spring-boot-starter-web'),
         d('com.fasterxml.jackson.module', 'jackson-module-kotlin'),
         d('org.springframework', 'spring-jdbc'),

@@ -96,7 +96,7 @@ class Dependency:
 
 # init gradle project for kotlin
 
-def init_kotlin_gradle_project(k, dependencies):
+def init_project(k, dependencies):
     # get args
     args = k.get_args([
         k.option('--group', required=True, help="project group"),
